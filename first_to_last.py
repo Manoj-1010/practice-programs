@@ -1,6 +1,6 @@
 # Function for printing numbers from first to last
 def first_to_last(first, last):
-    if first > last: print(-1); return # Return -1 if first is greater than large
+    if first > last: print(-1); return # Return -1 if first is greater than last
     while first <= last: # Loop statement for printing the series
         print(first, end=" ")
         first += 1
