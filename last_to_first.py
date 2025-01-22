@@ -5,6 +5,7 @@ def last_to_first(last, first):
         print(last, end=" ")
         last -= 1
 
-last_to_first(8,2) # Output: 8 7 6 5 4 3 2
-print()
-last_to_first(1,6) # Output: -1
+if __name__ == "__main__":
+    last_to_first(8,2) # Output: 8 7 6 5 4 3 2
+    print()
+    last_to_first(1,6) # Output: -1
