@@ -5,8 +5,9 @@ def multiplication_table(n, s): # Args: n = Multiplicant; s = Multiplier limit
         print(f"{n} x {i} = {n*i}")
         i += 1
 
-# Getting user inputs for 'n' and 's'
-n = int(input("Enter the Multiplicant: "))
-s = int(input("Enter the Multiplier limit: "))
-
-multiplication_table(n,s)
+if __name__ == "__main__":
+    # Getting user inputs for 'n' and 's'
+    n = int(input("Enter the Multiplicant: "))
+    s = int(input("Enter the Multiplier limit: "))
+    
+    multiplication_table(n,s)
