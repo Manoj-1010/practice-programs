@@ -14,6 +14,7 @@ Subtraction of 2 values: 20 - (-150) = 170.
 '''
 
 def add_and_subtract(num1, num2):
+    # Using the abs() funtion to find the absolute value of the number and displaying it
     print(
         f'''
 Addition of 2 values: ({num1}) + ({num2}) = {abs(num1+num2)}.
