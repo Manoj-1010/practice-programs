@@ -23,10 +23,12 @@ Output must have the following format:
 '''
 
 def time_estimator(load, water_level):
+    # Checking for valid loads by eliminating negative weights, and weights more than 7000, and handling zero load condition
     if load == 0: return "Time Estimated: 0 minutes"
     elif load < 0: return "INVALID INPUT"
     elif load > 7000: return "OVERLOADED"
     else:
+        # Based on the water level and load conditions, the respective estimated times are displayed
         if (water_level == 'L') and (load <= 2000): return "Time Estimated: 25 minutes"
         elif (water_level == 'M') and (load <= 4000): return "Time Estimated: 35 minutes"
         else: return "Time Estimated: 45 minutes"
